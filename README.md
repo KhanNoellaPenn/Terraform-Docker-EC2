@@ -26,10 +26,23 @@ NB: always remember to enter valid ami
  Ensure to allow ssh
  ### Step 3 Initialize Terraform 
  run terraform init on terminal
- ### Step 4 Review the Plan - `run terraform plan on terminal`
+ ![2025-05-31 15_42_07-Greenshot init](https://github.com/user-attachments/assets/ad2fdc16-df73-4861-974d-0e48b9caea80)
+
+ ### **Step 4 Review the Plan - run terraform plan on terminal**
  Before creating any resources, it's important to review the Terraform execution plan, to see a detailed preview of what Terraform intends to do — including what resources will be created, changed, or destroyed. This helps ensure your configuration is correct and avoids any unintended changes to your AWS environment.
  after you have verified that your configurations gives the desire outcome we proceed to step 5 which is
+ ![2025-06-02 17_57_20-2025-05-31 15_43_31-Greenshot plan 22](https://github.com/user-attachments/assets/4b1ef66e-bee1-442c-8f90-cfe2e9f7844a)
+
  ### Step 5 Apply the Configuration - run terraform apply
- confirm apply witha yes and 
+ confirm apply with a yes 
+ ![2025-06-02 18_06_21-2025-05-31 15_44_00-Greenshot apply1](https://github.com/user-attachments/assets/0bb22223-a8e1-4e62-8513-28def8b7e1ac)
+
+ ### Step 6 Verifying Docker 
+ Once the EC2 instance is running, you can ssh  into it and verify that Docker was successfully installed by;
+  - Connect to the instance using SSH with your private key  - ssh -i docker-server.pem ec2-user@<public-ip>
+  - After logging in, check the Docker version to confirm it's installed   -   docker --version
+ ![2025-06-02 18_08_48-2025-05-22 13_35_15-Greenshot docker installed](https://github.com/user-attachments/assets/f3b643b7-936a-49f4-a07d-a77779e9224f)
+
+
 
  
