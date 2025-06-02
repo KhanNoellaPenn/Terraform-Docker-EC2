@@ -26,7 +26,7 @@ NB: always remember to enter valid ami
  Ensure to allow ssh
  ### Step 3 Initialize Terraform 
  run terraform init on terminal
- ### Step 4 Review the Plan - run terraform plan on terminal
+ ### Step 4 Review the Plan - `run terraform plan on terminal`
  Before creating any resources, it's important to review the Terraform execution plan, to see a detailed preview of what Terraform intends to do — including what resources will be created, changed, or destroyed. This helps ensure your configuration is correct and avoids any unintended changes to your AWS environment.
  after you have verified that your configurations gives the desire outcome we proceed to step 5 which is
  ### Step 5 Apply the Configuration - run terraform apply
